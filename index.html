@@ -23,13 +23,25 @@
 <div id="content">
 	<h1>Projects</h1>
 	<div id="project_selector">
-		<button onclick="chooseProject('Password_Manager')" id="Password_Managerb">Password Manager</button>
+		<button onclick="chooseProject('treeGenerator')">Tree Generator</button>
+		<button onclick="chooseProject('Password_Manager')">Password Manager</button>
 		<button onclick="chooseProject('website')">Website</button>
 		<button onclick="chooseProject('mipsConnect4')">Connect 4</button>
 	</div>
 	<hr style="width:80%;">
 	<div id="project_display">
-		<div id="Password_Manager" class="project active">
+		<div id="treeGenerator" class="project active">
+			<h2>Tree Generator</h2>
+			<a href="https://github.com/jadendick/Tree_Generator" target="_blank">Github Repo</a>
+			<p>A Java program that generates random 2D trees based on several parameters. I made this project to see if I could create random trees that look somewhat 
+				realistic and to learn basic Java graphics. The default values allow for some pretty good looking trees although there are still some that don't exactly
+				resemble real life. </p>
+			<p>Getting the branches to connect well was the hardest part. I settled with allowing branches to be between 40 and 90 percent of the previous branch's
+				length to stop branches from looking very lopsided. The angle of the branch is random within a range set by the user. The angle is calculated from the
+				previous branch's angle so that they line up well.</p>
+			<img src="Images/treeGenerator.png" style="width:100%; ">
+		</div>
+		<div id="Password_Manager" class="project">
 			<h2>Password Manager</h2>
 			<a href="https://github.com/jadendick/Password_Manager" target="_blank">Github Repo</a>
 			<p>This project is a simple application to interact with a text file of login information. To protect the file from being read by anyone, users 
