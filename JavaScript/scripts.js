@@ -2,12 +2,10 @@ function scroll()
 {
 	var x = document.getElementById("topbar");	// Collapse topbar after scrolling down
 	var scrollAmount = document.body.scrollTop || document.documentElement.scrollTop;
-	if(scrollAmount > 1) {
+	if(scrollAmount > 1)
 		x.classList.add("collapsed"); 
-	}
-	else { 
+	else 
 		x.classList.remove("collapsed"); 
-	}
 }
 
 function chooseProject(name) {

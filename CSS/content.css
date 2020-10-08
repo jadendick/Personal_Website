@@ -1,10 +1,10 @@
 #content {
 	display: flex;
 	margin: auto;
-	max-width: 1600px;
+	max-width: 80%;
 	align-items: center;
 	flex-direction: column;
-	background-color: rgb(189, 189, 189);
+	background-color: #e0ddd4;
 }
 
 #content h1 {
@@ -16,7 +16,7 @@
 }
 
 #content button {	
-	margin: 0;
+	margin: 2px;
 	padding: 5px;
 	transition: all .2s ease-out;
 	border: none;
@@ -24,11 +24,12 @@
 	font-size: 20px;
 	color: black;
 	background-color: rgb(124, 124, 124);
+	
 }
 
 #content button:hover {
 	background-color: rgb(68, 68, 68);
-	color: white;
+	color: #e0ddd4;
 }
 
 #project_display {

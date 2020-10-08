@@ -7,7 +7,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet"> 
 	<meta name= "viewport" content= "width=device_width, initial-scale=1.0">
 
-	<script src="JavaScript/topbar_collapse.js"></script>
+	<script src="JavaScript/scripts.js"></script>
 </head>
 
 <body onscroll="scroll()">
@@ -16,7 +16,7 @@
 	<h1>jaden dick</h1>
 	<div id="navigationbar" class="navigationbar"> 
 		<a href="https://github.com/jadendick" target="_blank">GITHUB</a>
-		<a href="https://www.linkedin.com/in/jaden-dick-17a13b190/" target="_blank">LINKEDIN</a>
+		<a href="https://www.linkedin.com/in/jaden-dick/" target="_blank">LINKEDIN</a>
 	</div>
 </div>
 
@@ -24,6 +24,7 @@
 	<h1>Projects</h1>
 	<div id="project_selector">
 		<button onclick="chooseProject('treeGenerator')">Tree Generator</button>
+		<button onclick="chooseProject('erosionSimulator')">Erosion Simulator</button>
 		<button onclick="chooseProject('Password_Manager')">Password Manager</button>
 		<button onclick="chooseProject('website')">Website</button>
 		<button onclick="chooseProject('mipsConnect4')">Connect 4</button>
@@ -39,7 +40,18 @@
 			<p>Getting the branches to connect well was the hardest part. I settled with allowing branches to be between 40 and 90 percent of the previous branch's
 				length to stop branches from looking very lopsided. The angle of the branch is random within a range set by the user. The angle is calculated from the
 				previous branch's angle so that they line up well.</p>
-			<img src="Images/treeGenerator.png" style="width:100%; ">
+			<img src="Images/treeGenerator.jpg" style="width:100%; ">
+		</div>
+		<div id="erosionSimulator" class="project">
+			<h2>Erosion Simulator</h2>
+			<a href="https://github.com/jadendick/Erosion_Simulator" target="_blank">Github Repo</a>
+			<p>A Java program that simulates erosion on a random height map in order to generate terrain. The user presses the 'Erode' button until the random points resemble
+				mountains and valleys.</p>
+			<p>The most interesting part of this project is designing the erosion function to determine how the random points smooth together. The current method starts by choosing a random point for 
+				a water drop to remove a set amount of dirt. Then the droplet carries the dirt to a neighboring lower point, leaving dirt behind as it moves. The drop stops after it runs out of dirt or is
+				at the bottom of a valley. 
+			</p>
+			<img src="Images/erosionSimulator.png" style="width:100%; ">
 		</div>
 		<div id="Password_Manager" class="project">
 			<h2>Password Manager</h2>

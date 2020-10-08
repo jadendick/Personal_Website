@@ -1,3 +1,3 @@
 # Personal Website
 
-This website serves as an easy place to showcase for all my programming projects.
+This website serves as an easy place to showcase all my programming projects.
