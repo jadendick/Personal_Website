@@ -16,22 +16,69 @@
 	<h1>jaden dick</h1>
 	<div id="navigationbar" class="navigationbar"> 
 		<a href="https://github.com/jadendick" target="_blank">GITHUB</a>
-		<a href="https://www.linkedin.com/in/jaden-dick/" target="_blank">LINKEDIN</a>
+		<a href="https://www.linkedin.com/in/jadendick/" target="_blank">LINKEDIN</a>
 	</div>
 </div>
 
 <div id="content">
 	<h1>Projects</h1>
-	<div id="project_selector">
-		<button onclick="chooseProject('treeGenerator')">Tree Generator</button>
-		<button onclick="chooseProject('erosionSimulator')">Erosion Simulator</button>
-		<button onclick="chooseProject('Password_Manager')">Password Manager</button>
-		<button onclick="chooseProject('website')">Website</button>
-		<button onclick="chooseProject('mipsConnect4')">Connect 4</button>
+	<div>
+		<div id="project_selector_row">
+			<button onclick="chooseProject('kidsu')">Kids-U Website</button>
+			<button onclick="chooseProject('whenAmI')">When Am I?</button>
+			<button onclick="chooseProject('treeGenerator')">Tree Generator</button>
+		</div>
+		<div id="project_selector_row">
+			<button onclick="chooseProject('erosionSimulator')">Erosion Simulator</button>
+			<button onclick="chooseProject('Password_Manager')">Password Manager</button>
+			<button onclick="chooseProject('website')">Website</button>
+			<button onclick="chooseProject('mipsConnect4')">Connect 4</button>
+		</div>
 	</div>
 	<hr style="width:80%;">
 	<div id="project_display">
-		<div id="treeGenerator" class="project active">
+		<div id="kidsu" class="project active">
+			<h2>Kids-U Database Website - UTD EPICS</h2>
+			<a href="https://github.com/UTDallasEPICS/Kids-U-Database-Reporting" target="_blank">Github Repo</a>
+			<p>I worked as Project Manager along with 4 students to create an ASP.NET website for the non-profit organization Kids-U. It was a challenging and interesting
+				project that taught me about the MVC architecture and SQL databases along with offering lots of programming practice. Kids-U helps tutor low-income
+				children and needed a way to organize all of their student data and grades. This project was offered by UT Dallas through the EPICS elective class 
+				where students volunteer their time to develop engineering and software solutions for non-profts.
+			</p>
+			<p>This was the third semester of the projects' development with EPICS so when I came to the project the basic framework of the website was already made.
+				There was still plenty of work to be done and I started by implementing the searching and sorting features. From there I created the Report Card and 
+				Outcome Measurement pages which are similar to the Student Enrollment page. A substantial portion of my time was spent on refactoring code from prior teams
+				and making small tweaks that improve usability and security. Things like back buttons that preserve search settings and preventing IDOR vulnerabilities
+				probably won't be noticed much but if they didn't exist it would cause problems.
+			</p>
+			<p>This was also a great project to work on team collaboration and interacting with clients. Our team met several times with the project partner to showcase
+				progress and ask for feedback. I got to elicit requirements and practice understanding what a customer needs in a product. On our team, I was the most
+				comfortable with the programming work and was responsible for most of the progress during the semester. Because of this, I was able to help out my teammates
+				who were struggling by debugging issues and brainstorming solutions. 
+			</p>
+			<img src="Images/kuHome.png" style="width:100%; ">
+			<img src="Images/kuStudent.png" style="width:100%; ">
+		</div>
+		<div id="whenAmI" class="project">
+			<h2>When Am I? - ACM Projects</h2>
+			<a href="https://github.com/acm-projects/When-Am-I/" target="_blank">Github Repo</a>
+			<p>When Am I? is a mobile app that uses historical data pulled from the Internet to teach the user a brief history about the place they are standing. I helped 
+				create this app through ACM Projects, a semester long program where students build a project under the guidance of a project mentor. This was my first time
+				working with a mobile app and I learned a lot about working on a team and collaborative development.
+			</p>
+			<p>We used React Native with Firebase to create the app and I worked full stack but mainly focused on the backend. There are over 12,000 markers to view
+				throughout all of Texas. I did a lot of work with the database to organize the data and clean out markers that had missing or incorrect data, removing about 
+				5,000 markers. Loading lots of markers was pretty slow so I worked on optimising the query and restricting searches to only around the user. I created user 
+				profiles and got statistics from the database about the most popular tags which were then used for the user to track how many sites they visited. On the 
+				frontend, I got to work with the team to connect and display the back end query results on the map as well as the search page and user profiles.
+			</p>
+			<div class="project-images">
+				<img src="Images/waiMap.jpg" style="width:30%; ">
+				<img src="Images/waiInfo.jpg" style="width:30%; ">
+				<img src="Images/waiProfile.jpg" style="width:30%; ">
+			</div>
+		</div>
+		<div id="treeGenerator" class="project">
 			<h2>Tree Generator</h2>
 			<a href="https://github.com/jadendick/Tree_Generator" target="_blank">Github Repo</a>
 			<p>A Java program that generates random 2D trees based on several parameters. I made this project to see if I could create random trees that look somewhat 
